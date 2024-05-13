@@ -1,29 +1,13 @@
-
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-    <a href="/">Home</a>
-	<a href="/backdoor/">Backdoor</a>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
-
-<body>
-    <h1>My Astro Site</h1>
-    <h1>About Me</h1>
-    <h2>... and my new Astro site!</h2>
-  
-    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
-  
-    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-</body>
+---
+title: 'My First Blog Post'
+pubDate: 2022-07-01
+description: 'This is the first post of my new Astro blog.'
+author: 'Astro Learner'
+image:
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    alt: 'The full Astro logo.'
+tags: ["astro", "blogging", "learning in public"]
+---
 
 # Scoperta una delle backdoor più pericolose nel mondo del software open source
 
