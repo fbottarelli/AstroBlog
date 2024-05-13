@@ -1,0 +1,48 @@
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+    <a href="/">Home</a>
+	<a href="/backdoor/">Backdoor</a>
+	<body>
+		<h1>Astro</h1>
+	</body>
+</html>
+
+<body>
+    <h1>My Astro Site</h1>
+    <h1>About Me</h1>
+    <h2>... and my new Astro site!</h2>
+  
+    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+  
+    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+</body>
+
+# Scoperta una delle backdoor più pericolose nel mondo del software open source
+
+## Cosa è successo?
+Il 30 marzo è stata scoperta una delle backdoor potenzialmente più pericolose mai viste nel mondo dei software open source, che fa riflettere sulla possibilità che ne esistano altre simili ancora non scoperte.
+
+XZ Utils è una raccolta di strumenti open source e librerie per la compressione XZ, simile a zip o rar, che vengono utilizzati ampiamente nel mondo Linux. Venerdì 29 marzo, Andres Freund (un ingegnere del software di Microsoft) ha inviato una email a oss-security informando la comunità sulla scoperta di una backdoor nelle versioni 5.6.0 e 5.6.1 di xz/liblzma.
+
+## Come funzionava la backdoor e cosa permetteva di fare?
+La backdoor entra in gioco con uno dei modi principali in cui xz viene utilizzato - SSH. SSH è un protocollo crittografato tra due macchine in cui possono essere scambiati comandi di testo, consentendo a un utente di interagire con un server. La backdoor significa che la connessione non è più privata e potrebbe consentire a un attaccante di lanciare comandi, permettendo quindi il pieno controllo del server.
+
+## Perché è importante?
+XZ Utils è una libreria usata ovunque nei server Linux, che hanno una quota di mercato del 70% dei server nel mondo. Parliamo di una backdoor che permette quindi di rubare informazioni e controllare un numero immenso di server nel mondo, e avrebbe potuto causare disastri difficili da immaginare se fosse arrivata alle release stabili usate comunemente dai server.
+
+## Devo preoccuparmi?
+Riguardo a questa specifica backdoor no, perché grazie alla sua recente scoperta è già stata corretta prima di arrivare a qualsiasi release Linux stabile. Ha colpito solo le rolling release linux. Tuttavia, rimane un motivo di preoccupazione il fatto che potrebbero esserci altre simili backdoor ancora non scoperte.
+
+## Come è stata scoperta?
+Andres Freund è un ingegnere di Microsoft che, dopo l'aggiornamento di OpenSSH, ha notato un uso anomalo di CPU, anche con un login errato. Ha iniziato a fare reverse engineering per cercare la causa di questa anomalia e, dopo un'approfondita analisi, ha trovato la backdoor, offuscata con tecniche avanzate.
+
+## Chi ha messo la backdoor?
+Per poter fare modifiche su un progetto open source di questa importanza bisogna essere contributori affidabili. Infatti, l'account colpevole ha contribuito molte volte nell'arco di mesi, conquistando la fiducia degli altri contributori. Non sembra un'azione compiuta da un singolo soggetto; la complessità dell'operazione non lascia dubbi. Non è improbabile, visti i precedenti e la scala dell'attacco, che ci sia un eventuale governo dietro, Cina e Russia in primis.
