@@ -43,7 +43,7 @@ hamburger {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: #faec24;
   display: none;
   margin: 0;
 }
@@ -60,7 +60,7 @@ hamburger {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #ff4a13;
 }
 
 .expanded {
@@ -93,7 +93,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #cc7e00; /* Colore del testo per hover e focus, un giallo più scuro */
+  color: #d400ff; /* Colore del testo per hover e focus, un giallo più scuro */
 }
 
 footer {

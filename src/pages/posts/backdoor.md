@@ -1,15 +1,14 @@
 ---
-title: 'My First Blog Post'
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'Scoperta una delle backdoor più pericolose nel mondo del software open source'
 pubDate: 2022-07-01
 description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+author: Federico Bottarelli
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-
-# Scoperta una delle backdoor più pericolose nel mondo del software open source
 
 ## Cosa è successo?
 Il 30 marzo è stata scoperta una delle backdoor potenzialmente più pericolose mai viste nel mondo dei software open source, che fa riflettere sulla possibilità che ne esistano altre simili ancora non scoperte.
