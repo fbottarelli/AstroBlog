@@ -93,11 +93,11 @@ a {
 
 a:hover,
 a:focus {
-  color: #cca700; /* Colore del testo per hover e focus, un giallo più scuro */
+  color: #cc7e00; /* Colore del testo per hover e focus, un giallo più scuro */
 }
 
 footer {
-  background-color: #ff4500; /* Sfondo arancione */
+  background-color: #000000; /* Sfondo arancione */
   color: #ffdd00; /* Testo giallo */
   display: flex;
   gap: 1rem;
@@ -112,11 +112,11 @@ footer a {
 
 footer a:hover,
 footer a:focus {
-  color: #cca700; /* Colore del testo per hover e focus, un giallo più scuro */
+  color: #d27700; /* Colore del testo per hover e focus, un giallo più scuro */
 }
 
 footer .social {
-  background-color: #ff4500; /* Sfondo arancione, come il resto del footer */
+  background-color: #ff3b3b; /* Sfondo arancione, come il resto del footer */
 }
 
 /* Assicurati che gli elementi all'interno di .social abbiano colori coerenti */
