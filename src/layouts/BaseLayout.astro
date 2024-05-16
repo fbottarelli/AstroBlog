@@ -1,6 +1,8 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import BlogPost from '../components/BlogPost.astro';
+const allPosts = await Astro.glob('../pages/posts/*.md');
 import '../styles/global.css';
 // const pageTitle = "Articles // Works";
 const {pageTitle} = Astro.props;
@@ -16,14 +18,11 @@ const {pageTitle} = Astro.props;
   <body>
     <Header />
     <h1>{pageTitle}</h1>
+    <slot /> 
     
     <!-- posts -->
-    <ul>
-        <li><a href="/posts/backdoor/">Backdoor</a></li>
-            <li><a href="/posts/post-1/">Post 1</a></li>
-        <li><a href="/posts/post-2/">Post 2</a></li>
-        <li><a href="/posts/post-3/">Post 3</a></li>
-    </ul>
+    <!-- Li ricaviamo in modo dinamico -->
+    {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
     <!-- <slot />  -->
     <Footer />
     <script>
