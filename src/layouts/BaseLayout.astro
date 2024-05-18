@@ -15,14 +15,13 @@ const {pageTitle} = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
+  <!-- body -->
   <body>
     <Header />
     <h1>{pageTitle}</h1>
-    <slot /> 
     
-    <!-- posts -->
-    <!-- Li ricaviamo in modo dinamico -->
-    {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+    <slot /> 
+
     <!-- <slot />  -->
     <Footer />
     <script>
