@@ -30,8 +30,8 @@ const textCase = "lowercase";
     <title>{pageTitle}</title>
     <style define:vars={{skillColor, fontWeight, textCase}}>
 		h1 {
-		  color: purple;
-		  font-size: 4rem;
+		  color: rgb(255, 170, 33);
+		  font-size: 3rem;
 		}
 		.skill {
 			color: var(--skillColor);
@@ -44,35 +44,21 @@ const textCase = "lowercase";
   <body>
 	<Navigation />
     <h1>{pageTitle}</h1>
-    <h2>... and my new Astro site!</h2>
 
-    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
-
-    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    <p>Data Science, DataOps, AI Specialist Welcome! I'm Federico, and I have a deep passion for everything related to data and their application in real-world problems. Currently, I'm pursuing a Data Science master's degree at Padua University. Alongside my studies, I'm working as a Junior DataOps Engineer for an Italian company. From classical statistical analysis to more technology-based approaches like using AI, always with a statistical and mathematical approach at the core. I'm fast and experienced with computers and modern technologies. I have a good base of coding skills, particularly in Python and R, but I continuously seek opportunities to familiarize myself with new tools and technologies. </p>
 
 	<p>Here are a few facts about me:</p>
-	<ul>
-	  <li>My name is {identity.firstName}.</li>
-	  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-	  {identity.hobbies.length >= 2 &&
-		<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-	  }
-	</ul>
+
 	<p>My skills are:</p>
 	<ul>
 	  {skills.map((skill) => <li class="skill">{skill}</li>)}
 	</ul>
-
-	{happy && <p>I am happy to be learning Astro!</p>}
-
-	{finished && <p>I finished this tutorial!</p>}
 	
-	{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 	<Footer />
 	<!-- Scripts -->
 	<script>
 		import "../scripts/menu.js";
-	  </script>
+	</script>
   </body>
 </html>
 
