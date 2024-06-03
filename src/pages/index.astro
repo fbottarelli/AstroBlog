@@ -10,8 +10,9 @@ import BlogPost from '../components/BlogPost.astro';
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Federico Bottarelli //";
+const pageSubTitle = "AI Expert, Data Scientist, Software Engineer";
 ---
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} pageSubTitle={pageSubTitle}>
     <!-- posts -->
     <!-- Li ricaviamo in modo dinamico -->
     {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}

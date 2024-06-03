@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.vast-shadow-regular {
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+/* Add your other global styles here */
+
+
 html {
   background-color: black; /* Sfondo nero per tutto il sito */
   color: #ff4500; /* Colore del testo arancione per tutto il sito */
@@ -22,6 +61,11 @@ h1 {
   color: #ff4500; /* Colore arancione */
   background-color: black; /* Sfondo nero */
   padding: 10px; /* Aggiunge un po' di spazio intorno al testo */
+}
+
+.subtitle {
+  font-family: Arial, sans-serif;
+  color: blue;
 }
 
 hamburger {
