@@ -19,7 +19,7 @@ const happy = true;
 const finished = false;
 const goal = 3;
 
-const skillColor = "navy";
+const skillColor = "white";
 const fontWeight = "bold";
 const textCase = "lowercase";
 ---
@@ -43,22 +43,27 @@ const textCase = "lowercase";
 
   <body>
 	<Navigation />
-    <h1>{pageTitle}</h1>
-
-    <p>Data Science, DataOps, AI Specialist Welcome! I'm Federico, and I have a deep passion for everything related to data and their application in real-world problems. Currently, I'm pursuing a Data Science master's degree at Padua University. Alongside my studies, I'm working as a Junior DataOps Engineer for an Italian company. From classical statistical analysis to more technology-based approaches like using AI, always with a statistical and mathematical approach at the core. I'm fast and experienced with computers and modern technologies. I have a good base of coding skills, particularly in Python and R, but I continuously seek opportunities to familiarize myself with new tools and technologies. </p>
-
+	
+	<h1>{pageTitle}</h1>
+	
+	<p>Welcome to my page! I'm Federico, a Data Science, DataOps, and AI specialist with a deep passion for data and its applications to real-world problems. I'm currently pursuing a Data Science master's degree at Padua University and working as a Junior DataOps Engineer for an Italian company.</p>
+	
+	<p>My expertise ranges from classical statistical analysis to advanced technology-based approaches like AI, always grounded in a strong statistical and mathematical foundation. I am proficient with computers and modern technologies, with solid coding skills in Python and R. I am also constantly seeking opportunities to learn new tools and technologies.</p>
+	
 	<p>Here are a few facts about me:</p>
-
-	<p>My skills are:</p>
+	
+	<p>My skills include:</p>
 	<ul>
 	  {skills.map((skill) => <li class="skill">{skill}</li>)}
 	</ul>
 	
 	<Footer />
+	
 	<!-- Scripts -->
 	<script>
-		import "../scripts/menu.js";
+	  import "../scripts/menu.js";
 	</script>
   </body>
+  
 </html>
 

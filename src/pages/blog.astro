@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 const allPosts = await Astro.glob('../pages/posts/*.md');
-const pageTitle = "My Astro Learning Blog";
 import BlogPost from '../components/BlogPost.astro';
-
+const pageTitle = "My Learning Blog";
+const pageSubTitle = "Personal blog about my learning journey";
 ---
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} pageSubTitle={pageSubTitle}>
+
   <!-- posts -->
   <!-- Li ricaviamo in modo dinamico -->
   {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
