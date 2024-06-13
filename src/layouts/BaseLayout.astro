@@ -23,8 +23,8 @@ const {pageSubTitle} = Astro.props;
   <!-- body -->
   <body>
     <Header />
-    <h1 style="font-family: 'Vast Shadow', normal; color: rgb(255, 157, 0);">{pageTitle}</h1>
-    <h3 style="font-family: 'Vast Shadow', sans-serif; color: rgb(255, 157, 0);">{pageSubTitle}</h3>
+    <h1 class="title">{pageTitle}</h1>
+    <h3 class="subtitle">{pageSubTitle}</h3>
     
     <slot /> 
 

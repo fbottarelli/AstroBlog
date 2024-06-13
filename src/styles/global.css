@@ -6,25 +6,21 @@
   font-style: normal;
 
 }
-
 .libre-baskerville-regular {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .libre-baskerville-bold {
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
   font-style: normal;
 }
-
 .libre-baskerville-regular-italic {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: italic;
 }
-
 .vast-shadow-regular {
   font-family: "Vast Shadow", serif;
   font-weight: 400;
@@ -32,14 +28,10 @@
 }
 
 
-
-
 /* Add your other global styles here */
-
-
 html {
-  background-color: black; /* Sfondo nero per tutto il sito */
-  color: #ff4500; /* Colore del testo arancione per tutto il sito */
+  background-color: #EEEEEE; /* Sfondo nero per tutto il sito */
+  color: #373A40; /* Colore del testo arancione per tutto il sito */
   font-family: 'Fira Code', monospace; /* Manteniamo 'Fira Code' come font principale */
 }
 
@@ -55,18 +47,26 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'Courier New', Courier, monospace; /* Stile di font che ricorda quello da hacker */
-  font-size: 1.5rem; /* Imposta la dimensione del font a 1.5rem */
-  color: #ff4500; /* Colore arancione */
-  background-color: black; /* Sfondo nero */
-  padding: 10px; /* Aggiunge un po' di spazio intorno al testo */
+
+/* h1 {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 1.5rem; 
+  color: #F8F4E1; 
+  padding: 10px; 
+} */
+
+/* global.css */
+
+.title {
+  font-family: 'Vast Shadow', normal;
+  color: #373A40;
 }
 
 .subtitle {
-  font-family: Arial, sans-serif;
-  color: blue;
+  font-family: 'Vast Shadow', sans-serif;
+  color: #373A40;
 }
+
 
 hamburger {
   padding-right: 20px;
@@ -87,7 +87,7 @@ hamburger {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #faec24;
+  background-color: #DC5F00;
   display: none;
   margin: 0;
 }
@@ -104,7 +104,7 @@ hamburger {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff4a13;
+  background-color: #DC5F00;
 }
 
 .expanded {
@@ -131,36 +131,35 @@ hamburger {
 }
 
 a {
-  color: #ffdd00; /* Colore del testo giallo per i link */
+  color: #686D76; /* Colore del testo giallo per i link */
   text-decoration: none; /* Opzionale: rimuove il sottolineato dai link */
 }
 
 a:hover,
 a:focus {
-  color: #d400ff; /* Colore del testo per hover e focus, un giallo più scuro */
+  color: #DC5F00; /* Colore del testo per hover e focus, un giallo più scuro */
 }
 
 footer {
-  background-color: #000000; /* Sfondo arancione */
-  color: #ffdd00; /* Testo giallo */
-  display: flex;
+  color: #373A40; /* Testo giallo */
+  /* display: flex; */
   gap: 1rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 1rem;
 }
 
 footer a {
-  color: #ffdd00; /* Colore del testo giallo per i link */
+  color: #DC5F00; /* Colore del testo giallo per i link */
   text-decoration: none;
 }
 
 footer a:hover,
 footer a:focus {
-  color: #d27700; /* Colore del testo per hover e focus, un giallo più scuro */
+  color: #373A40; /* Colore del testo per hover e focus, un giallo più scuro */
 }
 
 footer .social {
-  background-color: #ff3b3b; /* Sfondo arancione, come il resto del footer */
+  background-color: #373A40; /* Sfondo arancione, come il resto del footer */
 }
 
 /* Assicurati che gli elementi all'interno di .social abbiano colori coerenti */
@@ -183,8 +182,13 @@ footer .social a:focus {
   margin: 20px auto; /* Adjust the margin as needed */
   padding: 20px;
   max-width: 800px; /* Adjust the max-width as needed */
-  background-color: #000; /* Black background */
-  color: #ff0; /* Yellow text */
+  background-color: #373A40; /* Black background */
+  color: #EEEEEE; /* Yellow text */
   border-radius: 10px; /* Optional: Rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
 }
+
+
+/* Palette di colori */
+/* - marroni: https://colorhunt.co/palette/f8f4e1af8f6f74512d543310 */
+/* https://colorhunt.co/palette/eeeeee686d76373a40dc5f00 */
