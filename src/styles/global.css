@@ -87,7 +87,7 @@ hamburger {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #DC5F00;
+  background-color: #686D76;
   display: none;
   margin: 0;
 }
@@ -104,7 +104,7 @@ hamburger {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #DC5F00;
+  background-color: #686D76;
 }
 
 .expanded {
