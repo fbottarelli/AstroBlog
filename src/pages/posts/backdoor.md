@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Scoperta una delle backdoor più pericolose nel mondo del software open source'
-pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
+pubDate: 2024-04-05
+description: 'Una grave backdoor è stata trovata in XZ Utils, sollevando preoccupazioni sulla sicurezza dei software open source.'
 author: Federico Bottarelli
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    url: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["astro", "blogging", "cybersecurity","open source", "security"]
 ---
 
 ## Cosa è successo?

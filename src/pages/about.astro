@@ -10,10 +10,31 @@ const identity = {
   firstName: "Federico",
   country: "Bottarelli",
   occupation: "DataOps and Data scientist",
-  hobbies: ["History", "Electronics", "Art"],
+  hobbies: ["History", "Electronics", "Art"],    
 };
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs","Git",
+    "R",
+    "MySQL",
+    "SQL",
+    "Kafka",
+    "Nifi",
+    "Ansible",
+    "Terraform",
+    "AWS",
+    "Cloudformation",
+    "LangChain",
+    "Machine Learning",
+    "Statistics",
+    "Deep Learning",
+    "MongoDB",
+    "PostgreSQL",
+    "Python",
+    "Denodo",
+    "Cloudera",
+    "Hadoop",
+    "Linux",
+    "Docker",
+    "Ignite",];
 
 const happy = true;
 const finished = false;
@@ -50,9 +71,10 @@ const textCase = "lowercase";
 	<p>Here are a few facts about me:</p>
 	
 	<p>My skills include:</p>
-	<ul>
+	<ul class="skills-list">
 	  {skills.map((skill) => <li class="skill">{skill}</li>)}
 	</ul>
+	
 	
 	<Footer />
 	
@@ -63,4 +85,29 @@ const textCase = "lowercase";
   </body>
   
 </html>
+
+
+<style>
+	.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.skill {
+  flex: 1 1 calc(25% - 10px); /* Per 4 colonne, cambia 25% a 33.33% per 3 colonne */
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+/* Aggiungi uno stile per le dimensioni del contenuto per fare in modo che si adatti bene */
+.skills-list .skill {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+</style>
 

@@ -174,19 +174,7 @@ footer .social a:focus {
 }
 
 
-.post {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto; /* Adjust the margin as needed */
-  padding: 20px;
-  max-width: 800px; /* Adjust the max-width as needed */
-  background-color: #373A40; /* Black background */
-  color: #EEEEEE; /* Yellow text */
-  border-radius: 10px; /* Optional: Rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
-}
+
 
 
 /* Palette di colori */

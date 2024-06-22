@@ -4,10 +4,27 @@ const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
 <div class="post">
-    <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
-    <p><em>{frontmatter.description}</em></p>
+    <!-- Non funziona align left qui -->
+    <p style="text-align: left;">{frontmatter.pubDate.toString().slice(0,10)}</p> 
+    <p style="text-align: center;"><em>{frontmatter.description}</em></p>
     <p>Written by: {frontmatter.author}</p>
     <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
     <slot />
 </div>
 </BaseLayout>
+
+<style>
+    .post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto; /* Adjust the margin as needed */
+            padding: 20px;
+            max-width: 800px; /* Adjust the max-width as needed */
+            background-color: #505050; /* Black background */
+            color: #EEEEEE; /* Yellow text */
+            border-radius: 10px; /* Optional: Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
+        }
+</style>
